@@ -1,0 +1,122 @@
+Feature: AddCharacteristicsToTaxonomyItemBooleanValue
+
+@UI @ItemMasterImport @Sanity @UserStory64014 @Automatable @Phase2_Sprint11 @Module-Items
+Scenario: Scenario_5_1_ItemMaster_64889_AddCharacteristicsToTaxonomyItemCreateDefaultBooleanValue
+	Given User login to the PIM application using the ppt username and password
+	When User selects the "Imports" in Hamburger menu
+	Then User is able to view the Import screen 
+	Then User clicks on "New-Import" button 
+	And User selects import type as "Item-Data-Items-Explicit" from dropdown  
+	Then User clicks on "Browse" button
+	Then User verifies valid data is present in the "CreateItem" Excel file 
+	And User uploads the "CreateItem" Excel file
+	Then User clicks on "Import" button
+	And Verify the imported file is processed successfully on the import screen
+	Then User is able to view the Import screen 
+	Then User clicks on "New-Import" button 
+	And User selects import type as "Taxonomy-Data-Baseline-Taxonomy" from dropdown  
+	Then User clicks on "Browse" button
+	Then User verifies valid data is present in the "ProductTaxonomyCreate" Excel file 
+	And User uploads the "ProductTaxonomyCreate" Excel file
+	Then User clicks on "Import" button
+	And Verify the imported file is processed successfully on the import screen
+	When User selects the "Imports" in Hamburger menu
+	Then User is able to view the Import screen 
+	Then User clicks on "New-Import" button 
+	And User selects import type as "Characteristics-Data-Taxonomy" from dropdown  
+	Then User clicks on "Browse" button
+	Then User verifies valid data is present in the "BooleanValue" Excel file 
+	And User uploads the "BooleanValue" Excel file
+	Then User clicks on "Import" button
+	And Verify the imported file is processed successfully on the import screen
+	When User selects the "Item" in Hamburger menu 
+	Then Verify Item Master "Explicit" tab is displayed
+	Then User recalls "item" id from "CreateItem" Excel
+	Then Verify the below service field values in Cosmos DB using "Pim" database and "Defaults" container in "Service Default" document
+	| FieldNames     |
+	| Item           |
+	| Oem            |
+	| Description    |
+	| Internal-Notes |
+	| Status         |
+	When User clicks on the "Taxonomy" tab
+	Then User recalls the following taxonomy fields from "BooleanValue" Excel
+	| FieldName |
+	| OEM       |
+	| Family    |
+	| Line      |
+	| Group     |
+	Then Verify that the following characteristic display boxes are displayed
+	| PanelNames                       |
+	| Default-Characteristics-Taxonomy |
+	| Characteristics-Display          |
+	Then Verify row "0" is displayed in characteristic "Kind" section
+	Then User selects characteristic kind and type from "BooleanValue" excel and verifies new characteristic "Value" is displayed in "Taxonomy" tab
+	Then Verify the "Taxonomy" tab below "BooleanValue" excel field values in Cosmos DB using "Pim" database and "Defaults" container in "Taxonomy Default" document
+	| FieldName         |
+	| Value             |
+	| Notes             |
+	| Active-Icon       |
+	| Scope-Active-Icon |
+	Then Verify Explicit Values fields are enabled
+	| FieldName          |
+	| Edit               |
+	| Add-Characteristic |
+	Then Verify Event History should be updated with in the "ItemPools" container of the "Pim" database in "ItemPool" document
+	| EventHistory                |
+	| ItemCreated                 |
+	| ItemCatalogCreated          |
+	Then Verify the "Taxonomy" tab below "BooleanValue" excel characteristic field "Value" in Cosmos DB using "Pim" database and "ItemPools" container in "ItemPool" document
+
+@NoNewBrowser @ItemMasterImport @Sanity @UserStory64014 @Automatable @Phase2_Sprint11 @Module-Items
+Scenario: Scenario_5_2_ItemMaster_64890_AddCharacteristicsToTaxonomyItemCreateAdminBooleanValue
+	When User selects the "Imports" in Hamburger menu
+	Then User is able to view the Import screen 
+	Then User clicks on "New-Import" button 
+	And User selects import type as "Characteristics-Data-Taxonomy" from dropdown  
+	Then User clicks on "Browse" button
+	Then User verifies valid data is present in the "AdminBooleanValue" Excel file
+	And User uploads the "AdminBooleanValue" Excel file
+	Then User clicks on "Import" button
+	And Verify the imported file is processed successfully on the import screen
+	When User selects the "Item" in Hamburger menu 
+	Then Verify Item Master "Explicit" tab is displayed
+	Then User recalls "item" id from "CreateItem" Excel
+	Then Verify the below service field values in Cosmos DB using "Pim" database and "Defaults" container in "Service Default" document
+	| FieldNames     |
+	| Item           |
+	| Oem            |
+	| Description    |
+	| Internal-Notes |
+	| Status         |
+	When User clicks on the "Taxonomy" tab
+	Then User recalls the following taxonomy fields from "AdminBooleanValue" Excel
+	| FieldName |
+	| OEM       |
+	| Family    |
+	| Line      |
+	| Group     |
+	Then Verify that the following characteristic display boxes are displayed
+	| PanelNames                       |
+	| Default-Characteristics-Taxonomy |
+	| Characteristics-Display          |
+	Then Verify row "0" is displayed in characteristic "Kind" section
+	Then User selects characteristic kind and type from "AdminBooleanValue" excel and verifies new characteristic "Value" is displayed in "Taxonomy" tab
+	Then Verify the "Taxonomy" tab below "AdminBooleanValue" excel field values in Cosmos DB using "Pim" database and "Defaults" container in "Taxonomy Default" document
+	| FieldName         |
+	| Value             |
+	| Notes             |
+	| Active-Icon       |
+	| Scope-Active-Icon |
+	Then Verify Explicit Values fields are enabled
+	| FieldName          |
+	| Edit               |
+	| Add-Characteristic |
+	Then Verify the "Taxonomy" tab below "AdminBooleanValue" excel field values in Cosmos DB using "Pim" database and "Defaults" container in "Taxonomy Default" document
+	| FieldName   |
+	| Value       |	
+	Then Verify Event History should be updated with in the "ItemPools" container of the "Pim" database in "ItemPool" document
+	| EventHistory                |
+	| ItemCreated                 |
+	| ItemCatalogCreated          |
+	Then Verify the "Taxonomy" tab below "AdminBooleanValue" excel characteristic field "Value" in Cosmos DB using "Pim" database and "ItemPools" container in "ItemPool" document

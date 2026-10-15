@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RunSettings>
+	<!-- Run Configuration for test execution -->
+	<RunConfiguration>
+		<!-- Target Framework -->
+		<TargetFramework>net8.0</TargetFramework>
+		<!-- Set the number of CPUs to use for parallel test execution -->
+		<MaxCpuCount>8</MaxCpuCount>
+		<!-- Set the directory where the test results will be saved -->
+
+	</RunConfiguration>
+
+	<!-- Test Parameters -->
+	<TestRunParameters>
+		<!-- You can pass custom parameters, such as credentials, database connection strings, etc. -->
+		<Parameter name="PIMQAURL" value="" />
+		<Parameter name="pptUsername" value=""    />
+		<!-- Value replaced with environment variable -->
+		<Parameter name="pptPassword" value="" />
+		<!-- Value replaced with environment variable -->
+		<Parameter name="DBConnectionString" value=""/>
+		<Parameter name="IDHConnectionString" value=""/>
+		<Parameter name="APIURI" value="/" />
+		<Parameter name="DeleteAPIURI" value="" />
+		<Parameter name="AzureURL" value="" />
+		<Parameter name="enableIDHVerification" value="false" />
+		<Parameter name="enableAutomationDataCleanup" value="false" />
+		<Parameter name="PIMQAAutomationPAT" value="PAT" />
+		<Parameter name="ADOOrganization" value="PPT" />
+		<Parameter name="BugProject" value="PPT" />
+		<Parameter name="TestProject" value="PPT" />
+		<Parameter name="CreateBug" value="false" />
+		<Parameter name="Environment" value="Dev" />
+		<Parameter name="CreateTraceLog" value="true" />
+		<Parameter name="AlternatesOwner" value="$(AlternatesOwner)" />
+		<Parameter name="LOBOwner" value="$(LOBOwner)" />
+		<Parameter name="BOMOwner" value="$(BOMOwner)" />
+		<Parameter name="ItemOwner" value="${ItemOwner}" />
+		<Parameter name="AdminOwner" value="$(AdminOwner)" />
+		<Parameter name="DefaultOwner" value="$(DefaultOwner)" />
+
+	</TestRunParameters>
+	<!-- Execution Configuration -->
+	<Execution>
+		<TestType>Unit</TestType>
+		<!-- Specify test type (e.g., Unit, Integration, Functional) -->
+		<Parallelize>
+			<Workers>8</Workers>
+			<!-- Number of test workers to run in parallel -->
+			<Scope>Class</Scope>
+			<!-- Parallelism scope (e.g., Method, Class, or None) -->
+		</Parallelize>
+	</Execution>
+
+	<!-- Logging Configuration -->
+	<Logger>
+		<LogLevel>Information</LogLevel>
+		<!-- Set the logging level (e.g., Information, Debug, Error) -->
+		<LogToFile>true</LogToFile>
+		<!-- Enable logging to a file -->
+		<LogFilePath>.\Logs\test-log.txt</LogFilePath>
+		<!-- Path where logs will be saved -->
+	</Logger>
+
+
+</RunSettings>

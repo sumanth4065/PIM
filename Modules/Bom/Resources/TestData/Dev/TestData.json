@@ -1,0 +1,404 @@
+{
+  "testCases": {
+    "01 TC-43721 Header Creation New Asset": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668873",
+      "PartitionKey": "17fba7d5-0a6c-4c76-8095-941b34b4b23c"
+    },
+    "02 TC-113678 Best BOM Created Event Actual and Planning Asset": {
+      "Sku": "BOM-LINE-AUTO-28",
+      "Quantity": "5",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "03 TC-113679 BOM Line Added Event Actual and Planning Asset": {
+      "Sku": "BOM-LINE-AUTO-27",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "04 TC-113680 BOM Line Quantity Update Actual and Planning Asset": {
+      "Quantity": "8"
+    },
+    "01 TC-113690 Best BOM Created Event Planning Asset Create": {
+      "Asset-BOM-Kind": "AUTO-ASSET-TEST",
+      "Serial-No": "PIM-123456",
+      "Sku": "BOM-LINE-AUTO-01",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Test",
+      "PartitionKey": "aecd776b-4e3f-45ba-8f22-c1b350151547"
+    },
+    "02 TC-43723 Header Notes Add Undo Asset": {
+      "BOMInternalNotes": "Test"
+    },
+    "03 TC-113692 BOM Line Quantity Update Planning Asset": {
+      "Quantity": "8"
+    },
+    "04 TC-113691 BOM Line Added Event Planning Asset": {
+      "Quantity": "9",
+      "Sku": "BOM-LINE-AUTO-57",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "07 TC-113757 Planning To Actual Created Event Asset": {
+      "Asset-BOM-Kind": "AUTOMATION ASSET",
+      "Serial-No": "PIM-123456",
+      "Sku": "BOM-LINE-AUTO-03",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Auto Test",
+      "PartitionKey": "aecd776b-4e3f-45ba-8f22-c1b350151547"
+    },
+    "08 TC-113758 Planning To Actual BOM Line Added Event Asset": {
+      "Quantity": "9",
+      "Sku": "BOM-LINE-AUTO-04",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "09 TC-113759 Planning To Actual BOM Line Quantity Updated Event Asset": {
+      "Quantity": "8"
+    },
+    "01 TC-137924 Asset Create New BOM Line And Save Quantity With Value Zero": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-8523",
+      "Sku": "BOM-LINE-AUTO-01",
+      "Quantity": "0",
+      "Quantity1": "2",
+      "Item-To-Bom-Notes": "Auto Test",
+      "PartitionKey": "16612c15-3a94-4257-a412-9101ed505cb7"
+    },
+    "02 TC-137925 Asset Create New BOM Line Without Changing Default Quantity": {
+      "Sku": "BOM-LINE-AUTO-02",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "03 TC-137927 Asset Edit BOM Line And Save Quantity With Value Zero": {
+      "Quantity": "0",
+      "Quantity1": "3",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "04 TC-137928 Asset Edit BOM Line And Modify Quantity To Zero": {
+      "Quantity": "4"
+    },
+    "05 TC-137929 Part Create New BOM Line And Save Quantity With Value Zero": {
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku": "BOM-LINE-AUTO-03",
+      "Quantity": "0",
+      "Quantity1": "2",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "06 TC-137930 Part Create New BOM Line Without Changing Default Quantity": {
+      "Sku": "BOM-LINE-AUTO-04",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "07 TC-137931 Part Edit BOM Line And Save Quantity With Value Zero": {
+      "Quantity": "0",
+      "Quantity1": "3",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "08 TC-137932 Part Edit BOM Line And Modify Quantity To Zero": {
+      "Quantity": "4"
+    },
+    "09 TC-137933 Product Create New BOM Line And Save Quantity With Value Zero": {
+      "Product-BOM-Kind": "Auto Product Test",
+      "Sku": "BOM-LINE-AUTO-05",
+      "Quantity": "0",
+      "Quantity1": "2",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "10 TC-137934 Product Create New BOM Line Without Changing Default Quantity": {
+      "Sku": "BOM-LINE-AUTO-06",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "11 TC-137935 Product Edit BOM Line And Save Quantity With Value Zero": {
+      "Quantity": "0",
+      "Quantity1": "4",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "12 TC-137936 Product Edit BOM Line And Modify Quantity To Zero": {
+      "Quantity": "3"
+    },
+    "01 TC-43732 Header Creation New Part": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668878",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "BOMInternalNotes": "Auto Test",
+      "PartitionKey": "0559578e-83aa-41c7-953b-94751c036c3b"
+    },
+    "02 TC-43734 Header Notes Add Undo Part": {
+      "BOMInternalNotes": "Test"
+    },
+    "03 TC-113682 Best BOM Created Event Actual Planning Part": {
+      "Sku": "BOM-LINE-AUTO-03",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "04 TC-113683 BOM Line Added Event Actual Planning Part": {
+      "Sku": "BOM-LINE-AUTO-04",
+      "Quantity": "2",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "05 TC-113684 BOM Line Quantity Update Actual Planning Part": {
+      "Quantity": "8"
+    },
+    "01 TC-113694 Best BOM Created Event Planning Part": {
+      "Asset-BOM-Kind": "AUTO-ASSET-TEST",
+      "Serial-No": "PIM-112233",
+      "Part-BOM-Kind": "Auto Part Kind",
+      "Sku": "BOM-LINE-AUTO-05",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Auto Test",
+      "PartitionKey": "1fd4fd38-afd7-4201-8bd4-da24e8d5f18b"
+    },
+    "02 TC-113695 BOM Line Added Event Planning Part": {
+      "Quantity": "7",
+      "Sku": "BOM-LINE-AUTO-06",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "03 TC-113696 BOM Line Quantity Update Planning Part": {
+      "Quantity": "8"
+    },
+    "06 TC-113761 Planning To Actual Created Event Part": {
+      "Part-BOM-Kind": "Auto Actual Part kind",
+      "Sku": "BOM-LINE-AUTO-03",
+      "Quantity": "3",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "07 TC-113762 Planning To Actual BOM Line Added Event Part": {
+      "Sku": "BOM-LINE-AUTO-04",
+      "Quantity": "4",
+      "Item-To-Bom-Notes": "Auto Test"
+    },
+    "08 TC-113763 Planning To Actual BOM Line Quantity Updated Event Part": {
+      "Quantity": "6"
+    },
+    "01 TC-43707 Header Creation New Product": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668881",
+      "Product-BOM-Kind": "Auto Product Test",
+      "PartitionKey": "fb803c58-5804-4884-8412-5b235c1d6722"
+    },
+    "02 TC-43708 Header Notes Edit Save Product": {
+      "Internal-Notes": "Testing"
+    },
+    "03 TC-113686 Best BOM Created Event Actual Planning Product": {
+      "Sku": "BOM-LINE-AUTO-07",
+      "Quantity": "1",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "04 TC-43712 BOM Line Add To Grid Product": {
+      "Sku": "BOM-LINE-AUTO-08",
+      "Quantity": "2",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "05 TC-113687 BOM Line Added Event Actual Planning Product": {
+      "Sku": "BOM-LINE-AUTO-09",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "06 TC-113688 BOM Line Quantity Update Actual Planning Product": {
+      "Quantity": "2"
+    },
+    "01 TC-113698 Best BOM Created Event Planning Product": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668883",
+      "Product-BOM-Kind": "Auto Planning Product Test",
+      "Sku": "BOM-LINE-AUTO-10",
+      "Quantity": "1",
+      "Item-To-Bom-Notes": "Auto Test",
+      "PartitionKey": "e941f7b9-8d0f-4361-9ee1-6f431c49cbb0"
+    },
+    "02 TC-113699 BOM Line Added Event Planning Product": {
+      "Sku": "BOM-LINE-AUTO-11",
+      "Quantity": "7",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "03 TC-113700 BOM Line Quantity Update Planning Product": {
+      "Quantity": "9"
+    },
+    "06 TC-113765 Planning To Actual Created Event Product": {
+      "Product-BOM-Kind": "Auto Act Product Test",
+      "Sku": "BOM-LINE-AUTO-03",
+      "Quantity": "3",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "07 TC-113766 Planning To Actual BOM Line Added Event Product": {
+      "Sku": "BOM-LINE-AUTO-04",
+      "Quantity": "4",
+      "Item-To-Bom-Notes": "Testing"
+    },
+    "08 TC-113767 Planning To Actual BOM Line Quantity Updated Event Product": {
+      "Quantity": "6"
+    },
+    "01 TC-43720 Create New BOM Header For Asset With Existing BOM": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668877",
+      "Sku": "BOM-LINE-AUTO-50",
+      "Quantity": "4",
+      "PartitionKey": "820b35cb-01df-45ed-948a-b69bf672fc84"
+    },
+    "02 TC-43722 Edit BOM Header And Save For Asset": {
+      "Internal-Notes": "Automation Asset Testing"
+    },
+
+    "01 TC-43731 Create New BOM Header For Part With Existing BOM": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668890",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku": "BOM-LINE-AUTO-51",
+      "Quantity": "6",
+      "PartitionKey": "0fa7ac9c-1638-4b47-ba43-621ea840fe52"
+    },
+    "TC-43733 Header Edit Part Save": {
+      "Internal-Notes": "Automation Part Testing"
+    },
+    "01 TC-43706 Create New BOM Header For Product With Existing BOM": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668891",
+      "Product-BOM-Kind": "Automation Product Test",
+      "PartitionKey": "c8242b66-634e-42f7-b7a9-391238fb2652"
+    },
+    "02 TC-153279 Create New BOM Header For Product With Existing BOM Line": {
+      "Sku": "BOM-LINE-AUTO-51",
+      "Quantity": "3"
+    },
+    "TC-115824 BOM Same Rank Same BOM Line Validation": {
+      "Asset-BOM-Kind": "Auto Asset Test",
+      "Serial-No": "PIM-668891",
+      "Part-BOM-Kind": "Auto Part Test",
+      "Product-BOM-Kind": "Auto Product Kind Test",
+      "Sku": "BOM-LINE-AUTO-01",
+      "Quantity": "3",
+      "PartitionKey": "c8242b66-634e-42f7-b7a9-391238fb2652"
+    },
+    "TC-141810 Asset Product BOM Line Replace Part BOM Aggregate Quantities": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-7412",
+      "Sku1": "BOM-LINE-AUTO-61",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-02",
+      "Sku3": "BOM-LINE-AUTO-05",
+      "Quantity1": "9",
+      "PartitionKey": "d9d40f5c-0c46-452d-858d-775da2e931a7"
+    },
+    "TC-115825 BOM Flattening Multiple Obsolete Lines": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-4123",
+      "Sku": "BOM-LINE-AUTO-60",
+      "Sku1": "BOM-LINE-AUTO-59",
+      "Part-BOM-Kind": "Asset Part Kind",
+      "PartitionKey": "3a14478d-b816-4866-a0b6-9e0b65985686",
+      "Product-BOM-Kind": "Automation Product Test",
+      "Quantity": "4"
+    },
+    "TC-113770 Product Category Update BOM Line Add No Same Category": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-3803",
+      "Sku": "AUTO-ITEM-11",
+      "PartitionKey": "d2f0b00c-cbcd-4c21-a136-53c2e52acfa9",
+      "Product-Category": "AUTO_CATEGORY",
+      "Quantity": "3"
+    },
+    "01 TC-112561 Import Planning Asset Best BOM Created Event": {
+      "PartitionKey": "99f9d68e-c3df-4aa5-9c95-206b4763704c"
+    },
+    "01 TC-112540 Import Actual And Planning Asset Best BOM Creation Event": {
+      "PartitionKey": "21f808ae-2605-4d9f-b917-8ebd18be8936"
+    },
+    "01 TC-112568 Import Planning Part Best BOM Created Event": {
+      "PartitionKey": "4a79e801-4934-4441-aeae-45fe23b1740a"
+    },
+    "01 TC-112554 Import Actual And Planning Part Best BOM Created Event": {
+      "PartitionKey": "6e06d2e5-d892-4f9c-9ae8-a4e5c14c688a"
+    },
+    "01 TC-112575 Import Planning Product Best BOM Event": {
+      "PartitionKey": "52304c60-56de-47a8-a109-74c7bc1ad023"
+    },
+    "01 TC-112547 Import Actual And Planning Product Best BOM Created Event": {
+      "PartitionKey": "91495da5-b4c2-40c8-b7ff-6107cffef8a3"
+    },
+    "TC-126159 Asset BOM To Part BOM Replacement BOM Line Added": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668879",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku1": "BOM-LINE-AUTO-31",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-32",
+      "Sku3": "BOM-LINE-AUTO-33",
+      "Sku4": "BOM-LINE-AUTO-35",
+      "PartitionKey": "3d1895d5-b282-476c-a002-530c06f0d042"
+    },
+    "TC-126161 Product BOM To Part BOM Replacement BOM Line Added": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668880",
+      "Sku": "BOM-LINE-AUTO-36",
+      "Product-BOM-Kind": "Automation-Product-test",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku1": "BOM-LINE-AUTO-01",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-38",
+      "Sku3": "BOM-LINE-AUTO-39",
+      "PartitionKey": "b3fbdd80-ed38-49a7-8e64-3bdbb76a2f22"
+    },
+    "TC-126164 Asset BOM To Part BOM Replacement With Multiple Lines": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668885",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku1": "BOM-LINE-AUTO-40",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-41",
+      "Sku3": "BOM-LINE-AUTO-42",
+      "Sku4": "BOM-LINE-AUTO-43",
+      "Sku5": "BOM-LINE-AUTO-44",
+      "PartitionKey": "457a7c2e-0d83-4632-ac78-0af940978c20"
+    },
+    "TC-126165 Product BOM To Part BOM Replacement BOM Line Updated": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668886",
+      "Sku": "BOM-LINE-AUTO-45",
+      "Product-BOM-Kind": "Automation Product Test",
+      "Sku1": "BOM-LINE-AUTO-01",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-46",
+      "Item-To-Bom-Notes": "Testing",
+      "PartitionKey": "0c747c7a-7a30-4038-b926-8ee93d9103a8"
+    },
+    "TC-126166 Asset BOM To Part BOM Replacement Without Line": {
+      "Asset-BOM-Kind": "Automation Asset Kind",
+      "Serial-No": "PIM-668889",
+      "Part-BOM-Kind": "Automation Part Kind",
+      "Sku": "BOM-LINE-AUTO-47",
+      "Sku1": "BOM-LINE-AUTO-48",
+      "Quantity": "7",
+      "Sku2": "BOM-LINE-AUTO-49",
+      "PartitionKey": "a0704a23-066d-4262-b06a-5889ebc0f765"
+    },
+    "TC-151173 Validate UI Error Messages and Create Asset BOM Kind in Asset BOM Creation": {
+      "Sequencing": "1200",
+      "KindRank": "1200",
+      "Asset-BOM-Kind": "AUTO-TEST-TESTINGASSET1",
+      "Serial-No": "PIM-668873",
+      "KindName": "AUTO-TEST-TESTINGASSET1",
+      "Description": "Test description for the Asset BOM Kind",
+      "InternalNotes": "Internal notes for automation testing"
+    },
+    "TC-151172 Validate UI Error Messages and Create Part BOM Kind in Part BOM Creation": {
+      "Sequencing": "1400",
+      "KindRank": "1400",
+      "KindName": "AUTO-TEST-TESTINGPART1",
+      "Description": "Test description for the Part BOM Kind",
+      "InternalNotes": "Internal notes for automation testing",
+      "Part-BOM-Kind": "AUTO-TEST-TESTINGPART",
+      "Sku": "AUTO-PART-ITEM",
+      "Oem": "Zebra"
+    },
+    "TC-151171 Validate UI Error Messages and Create Product BOM Kind in Product BOM Creation": {
+      "Sequencing": "1300",
+      "KindRank": "1300",
+      "KindName": "AUTO-TEST-TESTINGPRODUCT1",
+      "Description": "Test description for the Product BOM Kind",
+      "InternalNotes": "Internal notes for automation testing",
+      "Product-BOM-Kind": "AUTO-TEST-TESTINGPRODUCT1",
+      "Oem": "Zebra",
+      "Family": "Memory",
+      "Line": "Disk",
+      "Group": "LPDDR4"
+    }
+  }
+}

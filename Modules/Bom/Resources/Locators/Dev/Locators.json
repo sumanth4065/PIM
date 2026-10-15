@@ -1,0 +1,31 @@
+{
+  "LeftHamburgerMenuNavigation": {
+    "HamburgerMenuOption": "//span[text()='[TEXT]']"
+  },
+  "BomConfiguration": {
+    "ConfigurationHeader": "#admin-bom-title",
+    "NewKindButton": "#admin-bom-kind-create-button",
+    "AssetOption": "//div[normalize-space(text())='Asset' and contains(@id, 'admin-bom-style-item')]",
+    "ProductOption": "//div[normalize-space(text())='Product' and contains(@id, 'admin-bom-style-item')]",
+    "PartOption": "//div[normalize-space(text())='Part' and contains(@id, 'admin-bom-style-item')]",
+    "KindName": "#admin-bom-kind-name-input",
+    "Sequencing": "#admin-bom-kind-sequencing-input",
+    "KindRank": "#admin-bom-kind-rank-input",
+    "Description": "#admin-bom-kind-description-input",
+    "InternalNotes": "#admin-bom-kind-notes-textarea",
+    "SaveButton": "#admin-bom-save-button",
+    "YesButton": "#modal-yes-button",
+    "NoButton": "#modal-no-button",
+    "CancelButton": "#admin-bom-cancel-button",
+    "ModifiedLabel": "//span[@id='admin-bom-undefined-kind-modified-label']",
+    "CreatedLabel": "//span[@id='admin-bom-undefined-kind-created-label']",
+    "KindNameError": "//*[@data-test-id='admin-bom-kind-name-validation']//span[contains(text(), 'Kind Name is required!')]",
+    "DescriptionError": "//ppt-form-validation[@fieldname='Description']//span[contains(text(), 'Description is required!')]",
+    "kindNameCharError": "//*[@fieldname='Kind Name']//span[contains(text(), 'allowed character limit')]",
+    "DescriptionCharError": "//*[@fieldname='Description']//span[contains(text(), 'allowed character limit')]",
+    "SequencingDigitError": "//*[@fieldname='Sequencing']//span[contains(text(), 'must not exceed 4 digits')]",
+    "KindRankDigitError": "//*[@fieldname='Kind Rank']//span[contains(text(), 'must not exceed 4 digits')]",
+    "SequencingNumberOnlyError": "//*[@fieldname='Sequencing']//span[contains(text(), 'must contain only numbers')]",
+    "KindRankNumberOnlyError": "//*[@fieldname='Kind Rank']//span[contains(text(), 'must contain only numbers')]"
+  }
+}

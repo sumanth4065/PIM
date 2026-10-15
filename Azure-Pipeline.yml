@@ -1,0 +1,131 @@
+pool:
+  name: Azure Pipelines
+  demands:
+  - msbuild
+  - visualstudio
+  - vstest
+
+#Your build pipeline references the ‘BuildPlatform’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+#Your build pipeline references the ‘BuildConfiguration’ variable, which you’ve selected to be settable at queue time. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it settable at queue time. See https://go.microsoft.com/fwlink/?linkid=865971
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘PIMQAURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘pptUsername’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘pptPassword’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘APIURI’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘DBConnectionString’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘DeleteAPIURI’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+#Your build pipeline references a secret variable named ‘AzureURL’. Create or edit the build pipeline for this YAML file, define the variable on the Variables tab, and then select the option to make it secret. See https://go.microsoft.com/fwlink/?linkid=865972
+variables:
+  solution: '**\*.sln'
+
+steps:
+- task: NuGetToolInstaller@0
+  displayName: 'Use NuGet 6.0.0'
+  inputs:
+    versionSpec: 6.0.0
+
+- task: NuGetCommand@2
+  displayName: 'NuGet restore'
+  inputs:
+    restoreSolution: '$(Parameters.solution)'
+
+- task: VSBuild@1
+  displayName: 'Build solution'
+  inputs:
+    solution: '$(Parameters.solution)'
+    platform: '$(BuildPlatform)'
+    configuration: '$(BuildConfiguration)'
+    msbuildArchitecture: x64
+
+- powershell: |
+   # Write your PowerShell commands here.
+   
+    dotnet tool install --global Microsoft.Playwright.CLI
+    playwright install --with-deps
+   
+  displayName: 'Playwright Installation'
+
+- powershell: |
+   # Function to encrypt using DPAPI with LocalMachine scope
+   function Encrypt-WithMachineKey {
+       param (
+           [Parameter(Mandatory = $true)]
+           [string]$PlainText
+       )
+   
+       Add-Type -AssemblyName System.Security
+   
+       $bytes = [System.Text.Encoding]::Unicode.GetBytes($PlainText)
+       $encryptedBytes = [System.Security.Cryptography.ProtectedData]::Protect(
+           $bytes,
+           $null,
+           [System.Security.Cryptography.DataProtectionScope]::LocalMachine
+       )
+       $base64Encrypted = [System.Convert]::ToBase64String($encryptedBytes)
+   
+       return $base64Encrypted
+   }
+   
+   # Encrypt the pipeline variable value (PPT build agent is preferred)
+   $PIMQAURLPipeline = Encrypt-WithMachineKey -PlainText "$(PIMQAURL)"
+   $pptUsernamePipeline = Encrypt-WithMachineKey -PlainText "$(pptUsername)"
+   $pptPasswordPipeline = Encrypt-WithMachineKey -PlainText "$(pptPassword)"
+   $APIURIPipeline = Encrypt-WithMachineKey -PlainText "$(APIURI)"
+   $DBConnectionStringPipeline = Encrypt-WithMachineKey -PlainText "$(DBConnectionString)"
+   $DeleteAPIURIPipeline = Encrypt-WithMachineKey -PlainText "$(DeleteAPIURI)"
+   $AzureURLPipeline = Encrypt-WithMachineKey -PlainText "$(AzureURL)"
+   
+   # Define the template and output paths using pipeline variables
+   $runSettingsFilePath = "$(System.DefaultWorkingDirectory)/PIMQAAutomation.runsettings"
+   
+   # Load the .runsettings file as XML
+   [xml]$xml = Get-Content -Path $runSettingsFilePath
+   
+   # Find the WebAppUrl test parameter
+   $PIMQAUrlParam = $xml.RunSettings.TestRunParameters.Parameter|Where-Object { $_.name -eq "PIMQAURL" }
+   $pptUsernameParam = $xml.RunSettings.TestRunParameters.Parameter|Where-Object { $_.name -eq "pptUsername" }
+   $pptPasswordParam = $xml.RunSettings.TestRunParameters.Parameter |Where-Object { $_.name -eq "pptPassword" }
+   $DBConnectionStringParam = $xml.RunSettings.TestRunParameters.Parameter |Where-Object { $_.name -eq "DBConnectionString" }
+   $APIURIParam = $xml.RunSettings.TestRunParameters.Parameter |Where-Object { $_.name -eq "APIURI" }
+   $AzureURLParam = $xml.RunSettings.TestRunParameters.Parameter |Where-Object { $_.name -eq "AzureURL" }
+   $DeleteAPIURIParam = $xml.RunSettings.TestRunParameters.Parameter |Where-Object { $_.name -eq "DeleteAPIURI" }
+   
+   # Set the XML element value to the encrypted value
+   $PIMQAUrlParam.value = $PIMQAURLPipeline
+   $pptUsernameParam.value = $pptUsernamePipeline
+   $pptPasswordParam.value = $pptPasswordPipeline
+   $DBConnectionStringParam.value = $DBConnectionStringPipeline
+   $APIURIParam.value = $APIURIPipeline
+   $AzureURLParam.value = $AzureURLPipeline
+   $DeleteAPIURIParam.value = $DeleteAPIURIPipeline
+   
+   
+   # Save the updated XML back to file
+   $xml.Save($runSettingsFilePath)
+   
+   # Confirm save
+   Write-Host "Updated .runsettings file saved to: $runSettingsFilePath"
+  displayName: 'Replace Runsettings file'
+
+- task: VSTest@3
+  displayName: 'Tests Execution'
+  inputs:
+    testSelector: testPlan
+    testPlan: 49382
+    testSuite: 132732
+    testConfiguration: 71
+    resultsFolder: '$(System.DefaultWorkingDirectory)\TestResults'
+    runSettingsFile: '$(System.DefaultWorkingDirectory)\PIMQAAutomation.runsettings'
+
+- task: PublishBuildArtifacts@1
+  displayName: 'Publish Artifacts- Test Results'
+  inputs:
+    PathtoPublish: '$(System.DefaultWorkingDirectory)\bin\Release\net8.0\TestResults '
+    ArtifactName: 'PIM Results'
+  condition: succeededOrFailed()
+

@@ -1,0 +1,354 @@
+{
+  "testCases": {
+    "Alternates_41582_UnidirectionalClusterInactivateRelationshipWithUpperCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC_004\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IC_005\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_41583_Unidirectional_Cluster_Create_Single_Item Cluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC_006\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_41584_Unidirectional_Cluster_Set_As_Master": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC_007\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IC_008\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_41590_AliasClusterActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC_012\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_41591_AliasClusterInActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC_011\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_41562_RecallUnidirectionalClusterActiveRelationshipwithcluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-ALT-UNI-ACT01\",\"Oem\":\"AUTO_OEM\",\"Description\":\"UNI - ACTIVE\"}"
+    },
+    "Alternate_41563_RecallUnidirectionalClusterInActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-ALT-UNI-INA01\",\"Oem\":\"AUTO_OEM\",\"Description\":\"UNI INACTIVE\"}"
+    },
+    "Alternate_41581_UnidirectionalClusterActivateRelationshipWithUpperCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-ALT-UNI-ACT01\",\"Oem\":\"AUTO_OEM\",\"Description\":\"UNI - ACTIVE\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-ALTALI07\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}"
+    },
+    "Alternate_41552_Alias_Cluster_Mode_Create_Single_Item Cluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALTALI05\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}"
+    },
+
+    "Alternate_41556_AliasViewClusterRelationships": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALTALI05\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}"
+    },
+    "Alternate_41551_AliasClusterInactivateRelationshipWithUpperCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALTALI01\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-ALTALI02\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}"
+    },
+    "Alternate_41553_AliasSetAsMaster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALTALI03\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-ALTALI04\",\"Oem\":\"AUTO_OEM\",\"Description\":\"TEST\"}"
+    },
+
+    "Alternate_41512_RecallInterchangeableClusterActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ACT-01\",\"Oem\":\"AUTO_OEM\",\"Description\":\"test\"}"
+    },
+
+    "Alternate_41513_RecallInterchangeableClusterInActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ACT-02\",\"Oem\":\"AUTO_OEM\",\"Description\":\"Test\"}"
+    },
+
+    "Alternate_41520_RecallInterchangeableClusterActiveRelationshipWithCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ACT-0103\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ACT-0104\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}"
+    },
+    "Alternate_41521_InterchangeableClusterInactivateRelationshipWithUpperCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-INACT-0101\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-INACT-0102\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}"
+    },
+
+    "Alternate_41523_InterchangeableClusterSetAsMaster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-MASTER-ACT-01\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-MASTER-ACT-02\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}"
+    },
+    "Alternate_41526_InterchangeableClusterViewClusterRelationships": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ACT-06\",\"Oem\":\"Acer\",\"Description\":\"Test\"}"
+    },
+    "Alternate_41550_AliasClusterActivateRelationshipWithUpperCluster": {
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALIAS-0021\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-ALIAS-0022\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}"
+    },
+    "Scenario_6_1_Alternate_93983_AlternateCreatedEventInterchangeable": {
+      "Item-Id": "AUTO-TEST-IC",
+      "Oem": "AUTO_OEM",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IC\",\"Oem\":\"AUTO_OEM\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IC\",\"Oem\":\"AUTO_OEM\",\"Description\":\"AutoTest\"}",
+      "Item3": "{\"Item-Id\":\"AUTO-TEST-IC\",\"Oem\":\"AUTO_OEM\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_6_1_Alternate_42352_ViewUnidirectionalActivateRelationshipBetweenClustersSupersession": {
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-SUP-ACT-117\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-SUP-ACT-118\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-SUP-ACT-119\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-SUP-ACT-120\",\"Oem\":\"Zebra\",\"Description\":\"TEST\"}"
+    },
+    "Scenario_1_1_Alternate_41512_RecallInterchangeableClusterActiveRelationshipWithCluster": {
+      "Item-Id": "AUTO-TEST-IN1-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_1_2_Alternate_41520_InterchangeableClusterActiveRelationshipWithUpperCluster": {
+      "Item-Id": "AUTO-TEST-IN2-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_2_1_Alternate_41552_RecallAliasInactivateditemCreateSingleItemClusterUI": {
+      "Item-Id": "AUTO-TEST-ALIAS1-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_2_3_Alternate_41550_AliasClusterActivateRelationshipWithUpperCluster": {
+      "Item-Id": "AUTO-TEST-ALIAS2-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_3_1_Alternate_41583_UnidirectionalClusterCreateSingleItemCluster": {
+      "Item-Id": "AUTO-TEST-UNI1-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_3_3_Alternate_41581_UnidirectionalClusterActivateRelationshipWithUpperCluster": {
+      "Item-Id": "AUTO-TEST-UNI2-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_11_1_Alternate_109905_AddingAliasItemToIDHItemDocument": {
+      "Item-Id": "AUTO-TEST-ALI",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-ALI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-ALI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "01 TC_93987 validate alternate created Event in AlternatePartPools": {
+      "Item-Id": "AUTO-TEST-UNI",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-UNI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item2": "{\"Item-Id\":\"AUTO-TEST-UNI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Item3": "{\"Item-Id\":\"AUTO-TEST-UNI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_107462_ValidateSelfReferencingInterchangebleSingleItemClusterBaselineItem": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-UNI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_107465_ValidateSelfReferencingInterchangebleSingleItemClusterExplicit item": {
+      "Item-Id": "AUTO-TEST-UNI",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Item1": "{\"Item-Id\":\"AUTO-TEST-UNI\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_4_1_Alternate_42291_InterchangeableClusterActivateRelationshipBetweenClustersSupersessionUI": {
+      "Item-Id": "AUTO-TEST-IN-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-IN1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-IN2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-IN3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-IN4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_5_1_Alternate_42290_UnidirectionalActivateRelationshipBetweenClustersSupersession": {
+      "Item-Id": "AUTO-TEST-UNI-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-UNI1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-UNI2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-UNI3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-UNI4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_16_1_Alternate_42235_ViewUnidirectionalActivateRelationshipBetweenClustersSupersession": {
+      "Item-Id": "AUTO-TEST-UNI-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-UNI1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-UNI2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-UNI3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-UNI4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_90623_InterchangeableActivateRelationshipSupersession": {
+      "Item-Id": "AUTO-TEST-IN-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-IN1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-IN2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-IN3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-IN4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_90627_UnidirectionalClusterActivateRelationshipBetweenClustersSupersession": {
+      "Item-Id": "AUTO-TEST-UNI",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-UNI1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-UNI2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-UNI3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-UNI4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_10_1_Alternate_106493_UnidirectionalInactivateRelationshipBetweenClustersSupersession": {
+      "Item-Id": "AUTO-TEST-UNI-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-UNI1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-UNI2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-UNI3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-UNI4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Alternate_122586_InterchangeableInactivateRelationshipSupersession": {
+      "Item-Id": "AUTO-TEST-IN-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_4_1_Alternate_42291_InterchangeableClusterActivateRelationshipSupersessionUI": {
+      "Item-Id": "AUTO-TEST-IN-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-IN1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-IN2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-IN3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-IN4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_15_1_Alternate_122585_InterchangeableSupersessionActivateRelationshipBetweenTwoClusters": {
+      "Item-Id": "AUTO-TEST-IN-SUP",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster3Item1": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster3Item2": "{\"Item-Id\":\"AUTO-TEST-IN-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    },
+    "Scenario_10_1_TC_106493_Unidirectional Inactivate Relationship Supersession Alternates Part Pool": {
+      "Item-Id": "AUTO-TEST-UNI-ALT",
+      "Oem": "Zebra",
+      "LOB": "AUTO_LOB",
+      "Description": "AutoTest",
+      "Status": "Pending",
+      "Product-Class": "AUTO_CLASS",
+      "Product-Category": "AUTO_CATEGORY",
+      "Internal-Notes": "Testing",
+      "Cluster1Item1": "{\"Item-Id\":\"AUTO-TEST-UNI1-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster1Item2": "{\"Item-Id\":\"AUTO-TEST-UNI2-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item1": "{\"Item-Id\":\"AUTO-TEST-UNI3-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}",
+      "Cluster2Item2": "{\"Item-Id\":\"AUTO-TEST-UNI4-ALT\",\"Oem\":\"Zebra\",\"Description\":\"AutoTest\"}"
+    }
+  }
+}

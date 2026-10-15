@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "github": {
+      "transport": "sse",
+      "url": "https://api.githubcopilot.com/mcp",
+      "auth": "github"
+    }
+  }
+}

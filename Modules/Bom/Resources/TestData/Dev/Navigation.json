@@ -1,0 +1,8 @@
+{
+  "Navigation": {
+    "LeftHamburgerMenuNavigation": {
+      "BomConfiguration": [ "BOM", "Configuration" ],
+      "BomManagement": [ "Management" ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "Navigation": {
+    "LeftHamburgerMenuNavigation": {
+      "AdminStandardFlow": [ "Item", "Configuration", "Characteristics", "Standard" ],
+      "AdminValueFlow": [ "Value" ],
+      "AdminUserManagementFlow": [ "User Management" ],
+      "AdminConfigurationFlow": [ "Configuration", "Characteristics", "Standard" ],
+      "AdminUserFlow": [ "Configuration", "Characteristics", "User Management" ],
+      "AdminItemManagementFlow": [ "Item", "Management" ],
+      "AdminItemFlow": [ "Management" ],
+      "ItemOemFlow": [ "Item", "Configuration", "Classification", "OEM" ],
+      "ConfigOemFlow": [ "Configuration", "Classification", "OEM" ],
+      "AdminValueNavigation": [ "Item", "Configuration", "Characteristics", "Value" ],
+      "AdminCategoryFlow": [ "Item", "Configuration", "Classification", "Category" ],
+      "CategoryFlow": [ "Configuration", "Classification", "Category" ],
+      "AdminClassFlow": [ "Item", "Configuration", "Classification", "Class" ],
+      "ClassFlow": [ "Configuration", "Classification", "Class" ],
+      "AdminClassificationTaxonomyFlow": [ "Item", "Configuration", "Classification", "Taxonomy" ],
+      "AdminTaxonomyFlow": [ "Configuration", "Classification", "Taxonomy" ]
+    }
+  }
+}

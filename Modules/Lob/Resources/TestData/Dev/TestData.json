@@ -1,0 +1,176 @@
+{
+  "testCases": {
+    "Scenario_1_1_TC_128213 Create New Baseline Data LOB Created Successfully": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_2_TC_128215 Create Updated Baseline Data LOB Created Successfully": {
+      "Internal-Notes": "Testing",
+      "Notes": "LOB Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_3_TC_100856 Update LOB In LobToGL Tab": {
+      "Notes": "Testing"
+    },
+    "Scenario_1_1_TC_101361 Assign Priority Rank Unique Primary LOB": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_2_TC_101362 Assign Priority Rank With Existing Primary LOB": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_1_TC_130717 Create Baseline Item IsLobDefTrue Without Service Taxonomy": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing"
+    },
+    "Scenario_1_2_TC_128212 Create Baseline Item IsLobDefTrue With Service Taxonomy": {
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_1_TC_130246 Create Baseline Item IsLobDef UnChecked": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01"
+    },
+    "Scenario_1_2_TC_130245 Create Baseline Item IsLobDef Checked": {
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_1_TC_102204 Check Activation With IsActive False": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_2_TC_102205 Update LOB With IsActive False": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Auto Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Update-Notes": "Auto Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_1_TC_102202 Trigger Event on LOB Activation": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Auto Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "Scenario_1_2_TC_102203 Trigger Event on LOB Update": {
+      "Notes": "Auto Testing"
+    },
+    "TC_128214 Add Service Taxonomy With Service Details Added To Baseline Data": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "TC_130244 Update Baseline Item IsLobDef Checkbox Should Update Successfully": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    },
+    "TC_135636 Update Service Taxonomy Service Details Added To Baseline Data": {
+      "Item-Id": "AUTO-TEST",
+      "Oem": "AUTO_OEM",
+      "Description": "AutoTest",
+      "Internal-Notes": "Testing",
+      "Class": "Class-01",
+      "Domain": "Domain-01",
+      "Type": "Type-01",
+      "Item": "Item-01",
+      "Notes": "Testing",
+      "Billed-Account-Code": "66400",
+      "Billed-Division-Code": "00",
+      "Unbilled-Account-Code": "28060"
+    }
+  }
+  }
